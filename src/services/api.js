@@ -2,11 +2,10 @@ import axios from 'axios';
 import {AsyncStorage} from 'react-native';
 
 const apiConsumer = axios.create({
-  baseURL: process.env.REACT_APP_API,
+  baseURL: 'localhost:3000',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
-    'Access-Control-Expose-Headers': 'Api-version',
   },
 });
 
